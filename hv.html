@@ -3,47 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Creativo</title>
+    <title>Hoja de Vida</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Librería de iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-    <header>
-        <h1>Mi Portafolio Creativo</h1>
-        <nav>
-            <a href="#sobre-mi">Sobre Mí</a>
-            <a href="educacion.html">Educación</a>
-            <a href="#certificaciones.html">Certificaciones</a>
-            <a href="#proyectos.html">Proyectos</a>
-        </nav>
-    </header>
-    <section id="sobre-mi" class="seccion">
 
-        <div class="izquierda">
-            
-            <h2>Sobre Mí</h2>
+    <!-- Menú superior -->
+    <nav class="menu">
+        <ul>
+            <li><a href="hv.html">Sobre mi</a></li>
+            <li><a href="educacion.html">Educación</a></li>
+            <li><a href="certificaciones.html">Certificaciones</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="principal">
+
+        <!-- Columna izquierda (foto, nombre, redes) -->
+        <div class="columna-izquierda">
+            <div class="foto-container">
+                <img src="fotohv.jpg" alt="Foto hoja de vida">
+                <div class="nombre">Víctor Manuel Tabares Toro</div>
+                <div class="info">Estudiante en TDS</div>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
-        <div class="derecha">
-            <h2>Quien soy</h2>
-            <p>Hola, soy un desarrollador creativo apasionado<br>
-                crear soluciones web atractivas y funcionales.<br>
-                Me interesa el diseño, la programación
-                <br>y la innovación tecnológica.</p> 
+        <!-- Columna derecha (quién soy, habilidades) -->
+        <div class="columna-derecha">
+            <div class="seccion">
+                <h2>Quién soy</h2>
+                <p>Aquí puedes escribir una breve descripción sobre ti, tus intereses y objetivos profesionales.</p>
+            </div>
+
+            <div class="seccion">
+                <h2>Habilidades</h2>
+                <ul class="habilidades">
+                    <li><span>Python</span><div class="barra"></div></li>
+                    <li><span>SQL</span><div class="barra"></div></li>
+                    <li><span>Power BI</span><div class="barra"></div></li>
+                    <li><span>Git y GitHub</span><div class="barra"></div></li>
+                    <li><span>React</span><div class="barra"></div></li>
+                </ul>
+            </div>
         </div>
+
     </section>
 
-    
-        
-
-
-    
-    </article>
-
-    
-    <footer>
-        <p>© 2025 Mi Portafolio Creativo</p>
-    </footer>
-
-    <script src=""></script>
 </body>
 </html>
