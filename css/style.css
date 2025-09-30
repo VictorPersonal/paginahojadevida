@@ -7,12 +7,29 @@ body {
     color: #000;
 }
 
+body.dark-mode {
+    background-color: #393E46;
+    color: #e0e0e0;
+}
+
+button{
+    margin: 12px;
+    padding:10px 20px;
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 10px;
+}
+
 /* Menú superior */
 .menu {
     background-color: #e74c3c; /* rojo */
     padding: 12px 0;
     width: 100%;
     text-align: center;
+}
+
+body.dark-mode .menu {
+    background-color: #222831;
 }
 
 .menu ul {
@@ -67,7 +84,6 @@ body {
 
 .foto-container .info {
     font-size: 14px;
-    color: #555;
     margin-bottom: 10px;
 }
 
@@ -77,6 +93,10 @@ body {
     font-size: 20px;
     color: #000;
     transition: color 0.3s;
+}
+
+body.dark-mode .foto-container .redes a {
+    color: #fff;
 }
 
 .foto-container .redes a:hover {
@@ -95,6 +115,9 @@ body {
     margin-bottom: 25px;
 }
 
+body.dark-mode .seccion {
+    background-color: #948979;
+}
 .seccion h2 {
     margin-top: 0;
     text-align: center;

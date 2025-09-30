@@ -1,3 +1,4 @@
-document.getElementById("btn-saludo").addEventListener("click", function() {
-    alert("¡Gracias por visitar mi portafolio!");
+
+document.getElementById('toggle-dark-mode').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });
