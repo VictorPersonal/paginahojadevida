@@ -12,18 +12,17 @@
 </head>
 <body>
 
-    <!-- Menú superior -->
-    <nav class="menu">
-        <ul>
-            <li><a href="hv.html">Sobre mi</a></li>
-            <li><a href="educacion.html">Educación</a></li>
-            <li><a href="certificaciones.html">Certificaciones</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <button id="toggle-dark-mode">Cambiar Tema</button>
+    <!-- Aquí se cargará el menú -->
+  <div id="menu"></div>
 
-        </ul>
-    </nav>
-
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+    
     <!-- Contenido principal -->
     <section class="principal">
 

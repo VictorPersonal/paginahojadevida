@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>holamundo</h1>
-    <button id="toggle-dark-mode">Cambiar Tema</button>
-    <script src="js/index.js"></script>
+    
+    <!-- Aquí se cargará el menú -->
+  <div id="menu"></div>
+
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+
+<script src="js/index.js"></script>
 </body>
 </html>
