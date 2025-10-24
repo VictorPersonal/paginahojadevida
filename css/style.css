@@ -147,6 +147,203 @@ body.dark-mode .seccion {
 }
 
 
+/*Proyecto.html*/
+
+.titulodelapalabraproyecto {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.heading-sec__main {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heading-sec__sub {
+  display: block;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* === Estilo para los proyectos === */
+.proyecticos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.proyecticosimg {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagendeproyecto {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.proyecticoscontenido {
+  flex: 1 1 45%;
+}
+
+.proyecticostitulo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.proyecticosparrafo {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.botondedescripcion {
+  background-color: #7a3df0;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botondedescripcion:hover {
+  background-color: #592bb5;
+}
+
+/* Modo oscuro */
+body.dark-mode .proyecticosparrafo {
+  color: #ddd;
+}
+
+body.dark-mode .botondedescripcion {
+  background-color: #9d6dfb;
+}
+
+
+
+/* === Estilo para los CERTIFICADOS === */
+
+.contenedorcertificados{
+    display: grid;  /* Activa el diseño en cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define columnas responsivas */
+    gap: 20px; /* espacio entre tarjetas */
+    padding: 20px;
+    justify-items: center;  /* Centra cada tarjeta en su columna */
+}
+
+
+
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 10px;
+  background-color: #fff;
+  color: #697e91;
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: #1FCAC5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plan .button {
+  background-color: #6558d3;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+  background-color: #4133B7;
+}
+
 
 /* Responsive */
 @media (min-width: 768px) {
