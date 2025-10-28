@@ -254,6 +254,8 @@ body.dark-mode .botondedescripcion {
   max-width: 300px;
 }
 
+
+
 .plan strong {
   font-weight: 600;
   color: #425275;
@@ -343,6 +345,49 @@ body.dark-mode .botondedescripcion {
 .plan .button:hover, .plan .button:focus {
   background-color: #4133B7;
 }
+
+
+
+/*Tema oscuro certificados*/
+body.dark-mode .contenedorcertificados {
+  background-color: #2d3138;
+  color: #c1cdd9;
+}
+
+
+body.dark-mode .plan {
+  box-shadow: 0 30px 30px -25px rgba(255, 255, 255, 0.5);
+  background-color: #2d3138;
+  color: #d1d5db; /*Este tiene cambio para el contenido de la tarjeta donde dice this plan, pero pesa mas o no define el color solo, pues en body.dark-mode .plan .inner, la propiedad color color si lo cambia*/
+}
+
+
+body.dark-mode .plan .inner {
+  background-color: #393E46;
+  color: #f1f1f1; /*Este tiene cambio para el contenido de la tarjeta donde dice this plan*/
+}
+
+
+body.dark-mode .plan .title {
+  color: #ffffff;
+}
+
+body.dark-mode .plan strong { /*Afecta todo el texto q ueste en negrilla*/
+  color: #ffffff; 
+}
+
+
+
+body.dark-mode .plan .features li {
+  /*Para separar el color de los items q tienen el chek o el chulo*/
+  color: #d6d6d6;
+}
+
+body.dark-mode .plan .features .icon {
+  background-color: #7aeb5d; /* Azul verdoso en oscuro */
+  color: #fff; /* Hace que el ícono SVG se vea blanco */
+}
+
 
 
 /* Responsive */
